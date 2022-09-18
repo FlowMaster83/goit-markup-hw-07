@@ -1,0 +1,112 @@
+.header-styles {
+    border-bottom: 1px solid #ececec;
+    width: auto;
+}
+
+.flex-for-header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.list-nav {
+    position: relative;
+}
+
+.list-nav:not(:last-child) {
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-for-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-nav {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-duration-function);
+}
+
+.current::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    content: '';
+    border-radius: 2px;
+    background-color: var(--blue);
+}
+
+.header-nav:focus,
+.header-nav:hover {
+    color: var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.flex-for-contact-to {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.contact-list:not(:first-child) {
+    align-items: center;
+    margin-left: auto;
+}
+
+.contact-to {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey);
+    text-decoration: none;
+    transition: color var(--transition-duration-function);
+}
+
+.contact-to:hover,
+.contact-to:focus {
+    color: var(--blue);
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill var(--transition-duration-function);
+}
+
+.envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill var(--transition-duration-function);
+}
+
+.smartphone:hover .envelope,
+.smartphone:focus .envelope {
+    fill: var(--blue);
+}
