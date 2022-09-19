@@ -6,12 +6,13 @@
     display: flex;
 }
 
-.activities-points:not(:last-child) {
-    margin-right: 30px;
-}
-
 .activities-points {
     flex-basis: calc((100% - 60px) / 3);
+
+
+&:not(:last-child) {
+    margin-right: 30px;
+    }
 }
 
 .ov-activ-parent {

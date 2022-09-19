@@ -14,10 +14,10 @@
     padding: 10px 52px;
     margin-left: auto;
     margin-right: auto;
-}
 
-.modal-send-btn:focus {
+&:focus {
     background-color: var(--blue-for-modal-button);
+    }
 }
 
 .modal-send-text {

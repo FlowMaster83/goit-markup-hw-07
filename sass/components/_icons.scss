@@ -62,12 +62,12 @@
     align-items: center;
     width: 170px;
     height: 92px;
-}
 
-.customer-link:hover .each-item,
-.customer-link:focus .each-item {
+&:hover .each-item,
+&:focus .each-item {
     fill: var(--blue);
     transition: var(--transition-duration-function);
+    }
 }
 
 .each-item {
@@ -84,10 +84,10 @@
     fill: var(--another-grey);
     background-color: var(--white);
     transition: border var(--transition-duration-function);
-}
 
-.customer-item:hover,
-.customer-item:focus {
+&:hover,
+&:focus {
     border: 1px solid var(--blue);
     border-radius: 4px;
+    }
 }

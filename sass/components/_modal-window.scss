@@ -31,10 +31,10 @@
     position: absolute;
     top: 8px;
     right: 8px;
-}
 
-.modal-close-button:hover .modal-close-icon,
-.modal-close-button:focus .modal-close-icon {
+&:hover .modal-close-icon,
+&:focus .modal-close-icon {
     fill: var(--blue);
     transition: var(--transition-duration-function);
+    }
 }
